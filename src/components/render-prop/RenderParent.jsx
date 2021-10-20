@@ -12,14 +12,14 @@ class RenderParent extends Component {
     };
   }
 
-  handleClick = () => {
+  incrementCount = () => {
     this.setState((prevState) => ({
       count: prevState.count + 1,
     }));
   };
 
   render() {
-    return this.props.render(this.state.count, this.handleClick);
+    return this.props.render(this.state.count, this.incrementCount);
   }
 }
 
