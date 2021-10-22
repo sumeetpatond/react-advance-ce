@@ -4,6 +4,7 @@ import EBChild from "./components/error-boundary/EBChild";
 import ErrorBoundary from "./components/error-boundary/ErrorBoundary";
 import HocChild1 from "./components/hoc/HocChild1";
 import HocChild2 from "./components/hoc/HocChild2";
+import Portal from "./components/portal/Portal";
 import RenderParent from "./components/render-prop/RenderParent";
 
 // eslint-disable-next-line require-jsdoc
@@ -31,6 +32,7 @@ function App() {
       <ErrorBoundary>
         <EBChild />
       </ErrorBoundary>
+      <Portal />
     </div>
   );
 }
